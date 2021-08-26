@@ -1,16 +1,29 @@
 <div id="wrapper">
     <app-header [user]="user"></app-header>
-    <!-- <section *ngIf="!user.registered">
+    <app-login></app-login>
+
+    <!-- <p>This text is <span [ngStyle]='setImportance()'>very</span> important!</p>
+
+    <input type="radio" name="preference" id="importantHighlight"
+        style="transform:scale(1.5)"
+        (click)="setStylePreference('hilite')">
+    <label for="importantHighlight">Highlight</label>
+    <input type="radio" name="preference" id="importantCaps"
+        style="transform:scale(1.5)"
+        (click)="setStylePreference('caps')">
+    <label for="importantCaps">Caps</label>
+
+    <section *ngIf="!user.registered">
         <img src="../assets/images/chooseMyPlate.gov.png" alt="" >
     </section>
     <section *ngIf="user.registered">
         <img src="../assets/images/generic-plate.png" alt="" >
     </section> -->
-    <div [ngSwitch]=loggedIn>
+    <!-- <div [ngSwitch]=loggedIn>
         <p>Logged In: 
             <span *ngSwitchCase="false" class="notRegistered">{{ loggedIn }}</span>
             <span *ngSwitchCase="true">{{ loggedIn }}</span>
         </p>
-    </div>
-    <app-child (login)="logIn($event)"></app-child>
+    </div> -->
+    <app-child (login)="logIn($event)"></app-child> -->
 </div>
